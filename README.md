@@ -1,2 +1,2 @@
-# True-cirme
+# True-crime
 A crime reporting project
