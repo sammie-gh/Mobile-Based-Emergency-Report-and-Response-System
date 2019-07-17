@@ -3,7 +3,7 @@ A crime reporting project
 
 
  # Images 
- ![](shots/one.jpeg)
+ ![](shots/one.jpg)
  ![](shots/two.jpeg)
  ![](shots/three.jpeg)
   ![](shots/four.png)
