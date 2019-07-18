@@ -6,7 +6,7 @@ A crime reporting project
  ![](shots/one.jpg)
  ![](shots/two.jpeg)
  ![](shots/three.jpeg)
-  ![](shots/four.png)
+  ![](shots/four.jpg)
   ![](shots/five.png)
   
  
