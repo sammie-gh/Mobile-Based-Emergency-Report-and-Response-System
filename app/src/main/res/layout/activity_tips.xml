@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung"
+    android:orientation="vertical"
+    tools:context=".TipsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:text=" Safty Tips"
+            android:textColor="#ed0a0a"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="We are living in the country where rape and murder is a daily occurrence. Our safety seems like a long-lost cause and it seems like we probably won’t be ever able to achieve it and that crimes against humanity will probably never stop. Keeping that in mind, we have come up with a list of 13 safety tips that every user should know. After all, if we don’t protect ourselves, who will?"
+                android:textColor="#9C2A00"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="1. Carry a pepper spray with you, always and keep it handy. Don’t tuck it too low in your bag."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="2. Hold your bag as tightly as you can when you are    taking  public transport. You can use it to hit your   predator."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="3. When you are walking on a road, keep your mobile phone handy but avoid using it. Being on the phone makes you less alert."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="4. When you are travelling in an auto alone, make sure you share the auto number with someone in your family even if it’s during the day."
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="5. Similarly, if you have booked a cab, always share your coordinates with someone."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="6. When in office, avoid going to isolated areas with no CCTV cameras."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="7. If you have parked your car, always look underneath, especially at night or at a less-crowded area. "
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="8. Whenever you are posting anything on social media, make sure you don’t do it in real-time. Because if you do, you’re telling people on your social media about your whereabouts. Delay those posts by say, 20-30 minutes."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="9. Always ensure you aren’t posting anything on your social media with your address or phone number on it. "
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="10. Whenever you are giving out order for delivery at a grocery store, make sure you whisper your address or write it down somewhere and give it to the shopkeeper. Never announce it."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="11. Whenever you are getting your phone recharged, if it’s at a store, don’t loudly speak up your phone number."
+                android:textColor="#fff"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="12. Always pour your own drinks at parties and don’t ever take drinks from complete strangers or even friends. If you’ve left your drink unattended for even a few minutes, leave it and get a fresh drink. It may have been spiked when you weren’t looking"
+                android:textColor="#fff"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="13. If you feel someone is stalking you, try to find a crowded place and call someone for help."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="Be Aware of Your Surroundings"
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:text="Typically known as “situational awareness”, make it a habit to know what’s going on around you. When you walk into a room, look to your left and right to see who is lingering at the door, find your exits, look to see who is there. When you walk out of a door, immediately look to your left and right to see if anyone is lingering, look behind you often to make sure someone’s not following you. You don’t have to be paranoid..you just need to be aware.
+
+
+Bad dudes are just waiting for that woman who hasn’t a clue as to what is going on around her because she’s going to be the easiest mark."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Get Off Your Phone "
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Is that phone call or text to your best friend about the Walmart chick you saw wearing nude colored leggings REALLY as important as your safety? That call/text can wait until you are in your car safely (with the doors locked). Not only are you able to be aware of your surroundings by any human threat, but you can pay attention to the traffic around you and not get run over. If you’ve got the kids in tow as well, you aren’t giving them your undivided attention in a potentially dangerous situation.
+
+Keep your phone handy to call for help, but don’t be so tied to it that you can’t be aware of what’s going on around you the moments you need to be the most aware."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Don’t Leave Your Purse Unattended"
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Before you glaze over at this, hear me out. Not only are you going to lose your cash and your credit cards if someone grabs your purse, but your personal safety is at risk because they now have your home address. This extends the danger time to well past the moment he or she walked by your shopping cart or restaurant chair and nicked your bag when you weren’t paying attention to the next time you’re away at a soccer game, and they break in while you’re gone. Or…while you’re there. And if not them, someone they know looking for an easy mark."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Lock the Door Behind You"
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Make it an absolute rule of thumb that when you get into your car, lock the door immediately (if nothing else, just use the remote you’ve already got in your hand to lock up, too). When you come in from outside, lock the door immediately.  When you go into a bathroom stall – lock first THEN find a place to put your bag. Too often bad guys don’t get you when you’re going into the building or car but will wait until you think you’re safe and relax your guard, and then open that door and you’re stuck.
+
+Don’t let the perceived ‘safety’ of your car or house keep you from actually being safe."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Speak Up"
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Do not be afraid to speak to someone to ask them to not come closer if approaching you in a parking lot. Do not be afraid to yell for help if they don’t stop. Do not be afraid to speak loudly to someone so that you can get the attention of others nearby. Do not be afraid to let your wishes be known that you do not want to be harmed. Might you be embarrassed if it turns out that you misunderstood the situation? What’s a few minutes embarrassment when you read a situation incorrectly and ask for help compared to a situation where you stood and froze, too scared to say something because you didn’t want to embarrass yourself and were harmed.
+
+Scream, yell, command – use your voice!"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Park Safely"
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="When parking, choose spots that are well-lit, amongst other cars, and as close to the main entrances of a building as you can (not so you can be lazy so that you spend less time in the car park as possible). Lock your car quickly, but keep your keys handy in case you have to get back in. Be aware of someone loitering near your car (do not approach), and always check in and around your car before entering. When loading your trunk, do so as quickly as you can and always keep aware on your surroundings of someone approaching.
+
+Keep your keys handy and do not fumble in your purse for them."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Answer the Door"
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Typically, we’ve been told, “If you’re home alone and someone knocks, don’t answer – they’ll go away.” Recent events, though, are showing that more and more, burglars are doing home invasions assuming that if no one answers, it’s safe to go in. Locally, we’ve been told by our police department to answer with a call for who it is, and let them know you’re on the phone or won’t be answering the door or other ways to let the person know you aren’t going to be opening the door. Never actually answer the door even for a service person you are expecting until you’ve been able to confirm that they are actually who they say they are.
+
+Do not invite a predator in."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Trust Your Instincts"
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Trust your gut. If you feel something weird about a situation, get out of it. If you have a sense of dread about walking into a dark area, don’t – find some light. If a person is giving you cause to be concerned, excuse yourself from the conversation or cross the street to get away from them.  I’m not talking about paranoia, I’m talking about that instinct that we tend to push aside – the hair raising on the back of your neck, goosebumps on your arms…all telling you to flee!"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Learn how to Use Your Gun"
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Do not go out and buy a pretty little gun, put it in a purse and never touch it again. When the time comes to use it, will you be able to draw it safely? Know how to get it off safety? Know how to aim and shoot? Know how to take care of a jam? Know how to reload? Get out to a range and learn to shoot your weapon. Learn how to handle it safely. Practice drawing and dry firing (if your gun works well, or get snap caps to use). Practice with your husband (or friend) acting as an attacker so that you can practice how you’ll react (just don’t get mad at him if he’s good at it!) Practice safely, but practice. Knowing how to use your gun effectively and safely will allow you to have another layer of defense between you and an attacker. Too many times, people who don’t know how to handle their weapons end up with said weapon turned against them. Don’t be that woman.
+
+If you’re going to have and use a gun, learn how to use it."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Don’t Make Yourself a Target"
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Wearing flashy jewelry (you have something valuable to steal), wearing restrictive clothing (unable to run or defend yourself), carrying more than you can manage, not paying attention to what’s going on around you,  leaving valuables in plain sight, leaving your garage open, flashing money (best not to show everything in your wallet when trying to pay) are all ways to make yourself a target.
+
+Hold yourself confidently, act wisely, don’t be a target."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Being proactive to keep yourself safe is your best self-defense move."
+                android:textColor="#ed1733"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:text="Whether it’s a personal self-defense class or something a little more involved like a martial art or Krav Maga, take a class from your local Y or attend a seminar by the local police force. They can show you a few moves to help you defend yourself, if necessary. When I took mine, our instructor emphasized – go for the soft spots. Use your fingers in their eyes, your hands/elbows/knees/feet in their crotch, your fingers in their throat – bite their noses and ears. Do anything you can to get a window of opportunity to run away."
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="PRACTICE AWARENESS"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="This is your first line of defence. Most people think of kicks to the groin and blocking punches when they hear the term “self-defence.” However, true self-defense begins long before any actual physical contact. The first, and probably most important, component in self-defense is awareness: awareness of yourself, your surroundings, and your potential attacker’s likely strategies.
+
+The criminal’s primary strategy is to use the advantage of surprise. Studies have shown that criminals are adept at choosing targets who appear to be unaware of what is going on around them. By being aware of your surroundings and by projecting a “force presence,” many altercations which are commonplace on the street can be avoided."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="USE YOUR SIXTH SENSE"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="“Sixth sense.” “Gut instinct.” Whatever you call it, your intuition is a powerful subconscious insight into situations and people. All of us, especially women, have this gift, but very few of us pay attention to it. Learn to trust this power and use it to your full advantage. Avoid a person or a situation which does not “feel” safe — you’re probably right."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="TAKE SELF-DEFENSE TRAINING"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="It is important to evaluate the goals and practical usefulness of a women’s self-defense program before signing up.
+
+Here are two tips: - Avoid martial arts studios** unless you specifically wish to train in the traditional martial arts techniques and are prepared for a long-term commitment. Many women’s self-defense programs teach watered-down martial arts techniques that are complex and unrealistic under the stress of an actual attack. - The self-defense program should include simulated assaults**, with a fully padded instructor in realistic rape and attack scenarios, to allow you to practice what you’ve learned."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="ESCAPE IS ALWAYS YOUR BEST OPTION"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="What if the unthinkable happens? You are suddenly confronted by a predator who demands that you go with him — be it in a car, or into an alley, or a building. It would seem prudent to obey, but you must never leave the primary crime scene with the predator. You are far more likely to be killed or seriously injured if you go with the predator than if you run away (even if he promises not to hurt you). Run away, yell for help, throw a rock through a store or car window — do whatever you can to attract attention. And if the criminal is after your purse or other material items, throw them one way while you run the other."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="YOU HAVE A RIGHT TO FIGHT"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Unfortunately, no matter how diligently we practice awareness and avoidance techniques, we may find ourselves in a physical confrontation. Whether or not you have self-defense training, and no matter what your age or physical condition, it is important to understand that you CAN and SHOULD defend yourself physically. You have both the moral and legal right to do so, even if the attacker is only threatening you and hasn’t struck first. Many women worry that they will anger the attacker and get hurt worse if they defend themselves, but statistics clearly show that your odds of survival are far greater if you do fight back. Aim for the eyes first and the groin second. Remember, though, to use the element of surprise to your advantage — strike quickly, and mean business. You may only get one chance."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="PEPPER SPRAY IS NOT YOUR SECRET WEAPON"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Pepper spray, like other self-defense aids, can be a useful tool. However, it is important to understand that there can be significant drawbacks to its use. For example, did you know that it doesn’t work on everyone? Surprisingly, 15-20% of people will not be incapacitated even by a full-face spray. Also, if you’re carrying it in your purse, you will only waste time and alert the attacker to your intentions while you fumble for it. Never depend on any self-defense tool or weapon to stop an attacker. Trust your body and your wits, which you can always depend on in the event of an attack."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="SAFEGUARD AGAINST HOME INVASIONS"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="This crime is on the rise. The primary way to prevent a home invasion is simply to never, ever open your door unless you either are certain you know who’s on the other side or can verify that they have a legitimate reason for being there (dressing up as a repair person or even police officer is one trick criminals use). In the event that an intruder breaks in while you’re home, you should have a safe room in your house to which you can retreat. Such a room should be equipped with a strong door, deadbolt lock, phone (preferably cell phone), and a can of pepper spray or fire extinguisher."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="AVOID A CAR-JACKING"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Lock all doors and keep windows up when driving. Most car-jackings take place when vehicles are stopped at intersections. The criminals approach at a 45-degree angle (in the blind spot), and either pull you out of the driver’s seat or jump in the passenger’s seat."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="BE PREPARED WHEN YOU TRAVEL"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Violent crimes against women happen in the best and worst hotels around the world. Predators may play the part of a hotel employee, push their way through an open or unlocked door, or obtain a pass key to the room. As with home safety, never open your door unless you are certain the person on the other side is legitimate, and always carry a door wedge with you when you travel. A wedge is often stronger than the door it secures."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="USE THE INTERNET WISELY"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Although the Internet is educational and entertaining, it can also be full of danger if one isn’t careful. When communicating online, use a nickname and always keep personal information such as home address and phone number confidential. Instruct family members to do the same. Keep current on security issues, frauds, viruses, etc. by periodically referring to “The Police Notebook” Internet Safety Page."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Always, always be aware of your surroundings"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="The worst thing you can do is have no idea who or what is around you. The more you pay attention, the less likely you are to be surprised. Also, if something does happen and you’re a witness, you’ll be able to provide better information to law enforcement."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Limit your distractions"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="If you’re walking through a deserted parking lot, is it really necessary to send a text right that moment? If you’re focused solely on your phone and checking your email, you’re not going to notice if something, or someone, looks out of place."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Make eye contact"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="The best thing you can do is let others know that you see them and could identify them if need be. When you pass someone on the street, look them in the eye and give a polite nod of the head to acknowledge you see them very clearly."/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="05dp"
+            android:paddingRight="05dp"
+            android:fontFamily="sans-serif"
+            android:textColor="#ed1733"
+            android:textSize="15sp"
+                android:text="Walk with purpose"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Stand tall and keep your posture so that it represents authority. The less you look like a victim, the less likely someone will target you as such. So, pull your shoulders back, keep your back straight and your stomach in and walk in a way that lets the world know that you will not go down without a fight."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="If you see something suspicious, report it"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Don’t worry about whether you’re overreacting or being overcautious. If you think something is out of place, make a call to the authorities. It’s always better to be safe than sorry. That’s what the police are there for. It’s better all the way around if they can be proactive instead of reactive."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="If you have to defend yourself, aim for body parts on your attacker that are tender and cannot be strengthened"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="If you find yourself in a position where you have to defend yourself, you want to aim wherever it’s going to hurt the most regardless of the attacker’s strength and size. These areas are the eyes, nose, throat, groin and shin. You can’t toughen them up so it doesn’t matter if he’s twice your size; hit him in one of these spots and he’s going to feel some pain."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="et boundaries and enforce them"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="If someone comes too close for comfort, tell them and force them to move back and give you your space. Don’t worry about whether you’ll come across as short or impolite. If your safety is at stake, it’s no time to be nice."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="If someone tries to force you to a different location, do not go"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Research has shown over and over again that if someone intends to move you, they also intend for you to not make it out alive. Whatever you do, never get in a vehicle with someone regardless of what they tell you because it isn’t going to be good."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Don’t open your house door without knowing who is on the other side"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Even if it’s someone who claims to be from the electric company, if you’re not expecting them then make them wait while you call yourself and verify their identity. The minute you open your door, that person has access not only to your home, but to you and your family as well."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Don’t leave things lying around the yard that someone could use to access your home"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="If you’re working on repainting the exterior of your house, take the ladder in at night. Yes, it’s a pain, but it’s much less painful than someone gaining entry when you’re lost in dreamland and can’t protect yourself."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Keep the bushes around your house trimmed so that someone doesn’t have a place to hide"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Better yet, when you plant bushes beneath your windows, make sure they’re thorny and would hurt if someone got too close to them. Make your home unfriendly to anyone who wants to access it without your permission."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="If you have a garage door opener in your car, keep it out of sight when you park in the driveway"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="If someone knows that all they have to do to get into your house is gain entry to your vehicle, your safety is at risk. Don’t keep the opener on your visor and make sure you lock your car doors at all times."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Use wooden dowels in your sliding doors and windows"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Don’t make it too easy for someone to just slide open a window or door and let themselves in. The dowel is easy to move in the event you have a fire and need to escape, but it will also keep them from being opened more than an inch or two so no one can fit their body through the opening."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Watch your use of social media"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Some people put everything on Facebook, from what they ate to how they did their hair today. Remember that the more information you give out, the more someone else will know your schedule and can figure out when you’re most vulnerable."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Carry a weapon only if you’re trained and willing to use it"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="Some women choose to carry pepper spray or a firearm as a method of defense. While that’s fine, make sure that you know how to use your weapon of choice properly and effectively. Also, don’t carry anything if you’re not willing to use it because then it just becomes something that the bad guy can take and use against you"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Trust your gut"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="If you feel like something is out of place, trust your instinct. Your sixth sense is actually your mind picking up on miniscule things that your brain doesn’t exactly register. So, if the hair on the back of your neck starts to raise, pay attention because something isn’t right"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#ed1733"
+                android:textSize="15sp"
+                android:text="Never, ever give up!"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="05dp"
+                android:paddingRight="05dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:text="No matter what happens, never stop fighting. Unleash your inner bitch and let her go. If you’re in a fight for your life, make sure you’re the one who wins. It’s time to play dirty and let the cards fall where they may. Also, realize that even if you’re injured (which you most likely would be in a self-defense situation), it doesn’t mean it’s a critical injury. Just keep fighting and have faith that you will persevere.
+
+The only thing that’s important is that, at the end of the day, you’re the one who lives to see another day. You want to make sure you come home every night and get the time you expect and deserve with your family and friends.
+
+Don’t let someone else rob you of your dreams and goals. If they choose you as a target, make sure they know that they just made a critical error in judgment."/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

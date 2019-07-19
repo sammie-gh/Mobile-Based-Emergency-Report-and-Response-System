@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:text="Welcome"
+            android:textColor="#F00"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/number_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter 1st Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/emergency_gmail_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter Emergency Email 1"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/number_2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter 2nd Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/emergency_gmail_2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter Emergency Email 2"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/number_3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter 3rd Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/emergency_gmail_3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter Emergency Email 3"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/number_4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter 4th Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/emergency_gmail_4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter Emergency Email 4"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                 />
+
+            <EditText
+                android:id="@+id/number_5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter 5th Number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <EditText
+                android:id="@+id/emergency_gmail_5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:ems="15"
+                android:gravity="center"
+                android:hint="Enter Emergency Email 5"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:onClick="next"
+            android:text="Next"
+            android:layout_marginBottom="20dp"
+            android:textColor="#b54ded"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+

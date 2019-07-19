@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="splash_background_color">#fff</color>
+
+
+    <color name="btnSignUp">#39796b</color>
+    <color name="btnSignActive">#A9d440</color>
+
+    <color name="overlayBackground">#7f0e0d03</color>
+    <color name="overlayActionBar">#0e0d03</color>
+
+    <color name="grey">#bfbfbf</color>
+    <color name="darkBlue">#23283a</color>
+    <color name="white">#fff</color>
+
+    <color name="materialBlue">#34475c</color>
+    <color name="pink">#fe104d</color>
+    <color name="colorBackGround">#ECE4E4</color>
+
+    <color name="AccentBack">#ec3f0a</color>
+
+
+
+
+    <!-- Restaurant  Theme Colors -->
+    <color name="orangeRed">#FF4500</color>
+    <color name="orange">#FFA500</color>
+
+
+    <color name="mintColorPrimary">#76be2f</color>
+    <color name="mintColorPrimaryDark">#289b23</color>
+    <color name="mintColorAccent">#f9a825</color>
+    <color name="mintPrimaryText">#424242</color>
+    <color name="mintIcon">#ff554f</color>
+    <color name="mintButtonNormal">#76be2f</color>
+    <color name="mintButtonHighlight">#81c784</color>
+    <color name="mintButtonText">#FFFFFF</color>
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#e91e63</color>
+    <color name="bg_screen2">#aa00ff</color>
+    <color name="bg_screen3">#e91e63</color>
+    <color name="bg_screen4">#ef6c00</color>
+
+    <color name="navigationBar">#25364a</color>
+    <color name="green">#00a900</color>
+    <color name="lightBlue">#00bcd4</color>
+    <color name="lightGreen">#00c7a0</color>
+    <color name="lightBlack">#5a7785</color>
+    <color name="greenLight">#36bb9e</color>
+    <color name="red">#F44336</color>
+    <color name="textDark">#111e2d</color>
+    <color name="blackBg">#242424</color>
+    <color name="lightBg">#657790</color>
+
+
+    <!--<color name="colorPrimary">#004d40</color>-->
+    <!--<color name="colorPrimaryDark">#00251a</color>-->
+    <!--<color name="colorAccent">#39796b</color>-->
+
+
+    <!-- dots active colors -->
+    <color name="dot_active">#000000</color>
+
+
+    <!-- dots inactive colors -->
+    <color name="dot_inactive">#cccccc</color>
+
+
+    <color name="yellow">#e28812</color>
+    <!-- refresh -->
+    <color name="refresh">#cd2d99</color>
+    <color name="refresh1">#008080</color>
+    <color name="refresh2">#800800</color>
+
+    <color name="forestGreen">#39796b</color>
+    <color name="Green">#A9d440</color>
+</resources>

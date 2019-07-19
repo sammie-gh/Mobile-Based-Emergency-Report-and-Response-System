@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1008565906504",
+    "firebase_url": "https://my-email-a.firebaseio.com",
+    "project_id": "my-email-a",
+    "storage_bucket": "my-email-a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008565906504:android:3eacbef9049c0528",
+        "android_client_info": {
+          "package_name": "nit.com.womensafty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008565906504-ptq0hiu33o9f3scbho3h4u2jt0k7i161.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfat_HZL0zfIkOZSsLaHm21FjGqOhrJgw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

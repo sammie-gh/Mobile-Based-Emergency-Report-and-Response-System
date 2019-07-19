@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/l2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="cursive"
+        android:text="New User Registartion Page"
+        android:textAlignment="center"
+        android:textColor="#F00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editable_shape"
+        android:drawableLeft="@drawable/avatar"
+        android:ems="13"
+        android:gravity="center"
+        android:hint="Name"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/reg_age"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editable_shape"
+        android:drawableLeft="@drawable/age"
+        android:ems="13"
+        android:gravity="center"
+        android:hint="Age"
+        android:imeOptions="actionNext"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/reg_cno"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editable_shape"
+        android:drawableLeft="@drawable/phone"
+        android:ems="13"
+        android:gravity="center"
+        android:hint="Contact No"
+        android:imeOptions="actionNext"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editable_shape"
+        android:drawableLeft="@drawable/mail"
+        android:ems="13"
+        android:gravity="center"
+        android:hint="Email - Id"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/reg_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editable_shape"
+        android:drawableLeft="@drawable/lock"
+        android:ems="13"
+        android:gravity="center"
+        android:hint="Password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/reg_re_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editable_shape"
+        android:drawableLeft="@drawable/password"
+        android:ems="13"
+        android:gravity="center"
+        android:hint="Re - Password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="registerUser"
+        android:text="Create Account"
+        android:textColor="#a72ce9"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

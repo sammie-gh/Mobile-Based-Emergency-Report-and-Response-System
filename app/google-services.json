@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "619967790987",
+    "firebase_url": "https://truecrime-6ca46.firebaseio.com",
+    "project_id": "truecrime-6ca46",
+    "storage_bucket": "truecrime-6ca46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619967790987:android:5bd8e2ccf59e35c0",
+        "android_client_info": {
+          "package_name": "sammie.com.womensafty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619967790987-sujcbml48i71hq5nec1hrml1cf53mm4i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sammie.com.womensafty",
+            "certificate_hash": "d9b42785f5db4fea7bbd8b15674d349d892deaa5"
+          }
+        },
+        {
+          "client_id": "619967790987-0rc79u0ve9ci8b0vmtfmq3nlgqgbv1nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoqZSt5o-SAj48MBSctI9bwq269OnteuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619967790987-0rc79u0ve9ci8b0vmtfmq3nlgqgbv1nu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

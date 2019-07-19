@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a1a0a1"
+    tools:context=".AboutUsActivity">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/security_for_women_has_become_a_major_issue_as_the_number_of_crimes_over_women_and_girls_increasing_day_by_day_this_paper_describes_about_women_safety_and_their_security_by_using_electronic_device_to_both_detect_the_problem_alert_authorities_this_paper_suggests_a_new_perspective_to_use_technology_to_protect_women_we_use_an_android_based_smart_phone_with_an_integrated_feature_that_alert_and_provide_location_based_information_this_document_describe_gps_and_gsm_based_women_security_system_that_provides_the_combination_of_gps_devices_as_well_as_provide_alerts_and_message_with_an_emergency_button_trigger_whenever_somebody_is_in_trouble_they_only_have_to_press_volume_key_button_after_that_a_message_alert_is_sent_to_register_contact_list_and_a_voice_call_to_the_number_registered_first_and_give_a_message_i_am_in_trouble_please_help_me_now_a_day_safety_of_women_is_becoming_very_poor_with_the_help_of_this_application_the_project_was_development_in_android_which_graphical_user_interface_it_provides_the_level_of_reliability_availability_and_compatibility_all_these_make_android_an_appropriate_language_for_this_project_because_android_language_is_based_on_java_language"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="25sp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:fontFamily="cursive"-->
+        <!--android:layout_gravity="center"/>-->
+
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:maxEms="15"
+            android:hint="Please enter your full name" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_contact_one"
+            android:layout_width="match_parent"
+            android:hint="Please enter your emergency contact one"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="phone"
+  />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_contact_two"
+            android:layout_width="match_parent"
+            android:hint="Please enter your emergency contact two"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="phone"
+  />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_contact_three"
+            android:layout_width="match_parent"
+            android:hint="Please enter your emergency contact three"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="phone"
+  />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_gender"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:hint="Please enter your gender" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_house_number"
+                android:layout_width="match_parent"
+                android:hint="Please enter your house number"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:inputType="textPostalAddress"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:hint="Where do u stay ?"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:inputType="textCapWords"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/AccentBack"
+        android:textColor="@android:color/white"
+        android:text="Update Information" />
+</LinearLayout>
