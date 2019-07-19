@@ -59,8 +59,7 @@
 
         <activity
             android:name=".TipsActivity"
-            android:label="Tips"
-            android:parentActivityName=".HomeActivity" />
+            android:label="Tips"/>
 
         <activity
             android:name=".AboutUsActivity"

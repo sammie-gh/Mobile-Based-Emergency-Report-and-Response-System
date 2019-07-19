@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="About Us"
-        android:id="@+id/about_us"/>
+        android:title="Tips"
+        android:id="@+id/menu_tips"/>
 
     <item
         android:title="Settings"

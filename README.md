@@ -1,12 +1,2 @@
-# Mobile Based Emergency Report and Response System
-A crime reporting project
-
-
- # Images 
- ![](shots/one.jpg)
- ![](shots/two.jpeg)
- ![](shots/three.jpeg)
-  ![](shots/four.jpg)
-  ![](shots/five.png)
-  
- 
+# Mobile-Based-Emergency-Report-and-Response-System
+ A crime reporting project

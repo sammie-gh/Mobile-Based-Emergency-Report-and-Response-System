@@ -83,10 +83,10 @@ import sammie.com.truecrime.Model.Users;
 public class HomeActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 1;
-    private   final String TAG ="HomeActivity" ;
+    private final String TAG = "HomeActivity";
     private String number = "";
     private final int REQUEST_CODE = 99;
-    TextView txt_latt, txt_longi,location_name;
+    TextView txt_latt, txt_longi, location_name;
     private GoogleMap mMap;
     SimpleDateFormat simpleDateFormat;
     String FirstNumber, SecondNumber, ThirdNumber, FourthNumber, FifthNumber;
@@ -174,6 +174,8 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
+                    lat = txt_latt.getText().toString();
+                    lng = txt_longi.getText().toString();
                     // The toggle is enabled
                     toggleButton.setBackground(ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_technology));
                     Toast message = Toast.makeText(getApplicationContext(), "emergency shake detected sending Hail", Toast.LENGTH_SHORT);
@@ -197,7 +199,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                 }
             }
         });
-
 
 
         dialog = new SpotsDialog.Builder().setContext(HomeActivity.this)
@@ -291,7 +292,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 dialog.show();
                                 lat = txt_latt.getText().toString();
                                 lng = txt_longi.getText().toString();
-                                sendemail(lat, lng, curentUserName,user_house_address,user_town);
+                                sendemail(lat, lng, curentUserName, user_house_address, user_town);
 
                             }
                         });
@@ -416,7 +417,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                         edt_contact_three.setText(user.getEmerg_contact_three());
 
 
-
                     }
 
             }
@@ -446,7 +446,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 if (TextUtils.isEmpty(fName) || TextUtils.isEmpty(contact_1) || TextUtils.isEmpty(contact_2)
                         || TextUtils.isEmpty(contact_3) || TextUtils.isEmpty(gender) || TextUtils.isEmpty(res_address)
-                || TextUtils.isEmpty(house_number)) {
+                        || TextUtils.isEmpty(house_number)) {
                     Toast.makeText(getApplicationContext(), "Please Check fields", Toast.LENGTH_SHORT).show();
                     if (dialog.isShowing()) {
                         dialog.dismiss();
@@ -495,8 +495,8 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         bottomSheetDialog.show();
     }
 
-    private void sendemail(String lat, String lng, String curentUserName,String user_house_address,String user_town) {
-        Toast.makeText(HomeActivity.this, lat+lng, Toast.LENGTH_LONG).show();
+    private void sendemail(String lat, String lng, String curentUserName, String user_house_address, String user_town) {
+        Toast.makeText(HomeActivity.this, lat + lng, Toast.LENGTH_LONG).show();
 
         Intent intentemail = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
 
@@ -508,9 +508,9 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         intentemail.putExtra(Intent.EXTRA_EMAIL, new String[]{FirstMail, SecondMail, ThirdMail, FourthMail, FifthMail});
         //    intentemail.putExtra(Intent.EXTRA_EMAIL,""+FirstMail+""+SecondMail+""+ThirdMail+""+FourthMail+""+FifthMail);
         intentemail.putExtra(Intent.EXTRA_SUBJECT, "Please help me ");
-        intentemail.putExtra(Intent.EXTRA_TEXT,  "This is "
-                +curentUserName+"from "+user_town+" House No:"+user_house_address+"."+
-                " I am Unsafe.My Current Location is " + lat + "  ,  " + lng +" " +address);
+        intentemail.putExtra(Intent.EXTRA_TEXT, "This is "
+                + curentUserName + "from " + user_town + " House No:" + user_house_address + "." +
+                " I am Unsafe.My Current Location is " + lat + "  ,  " + lng + " " + address);
         startActivity(intentemail);
 
         try {
@@ -548,26 +548,25 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void sendSMSMessage(String lat, String lng, String usersname, String one, String two, String three) {
 
-         Toast.makeText(HomeActivity.this, lat+lng, Toast.LENGTH_LONG).show();
-
+        Toast.makeText(HomeActivity.this, lat + lng, Toast.LENGTH_LONG).show();
 
 
         SmsManager smsManager = SmsManager.getDefault();
         smsManager.sendTextMessage(one, null, "This is "
-                +curentUserName+"from "+user_town+" House No:"+user_house_address+"."+
-                " I am Unsafe.My Current Location is " + lat + "  ,  " + lng +" " +address, null, null);
+                + curentUserName + "from " + user_town + " House No:" + user_house_address + "." +
+                " I am Unsafe.My Current Location is " + lat + "  ,  " + lng + " " + address, null, null);
 
         //second number
         SmsManager smsManager1 = SmsManager.getDefault();
         smsManager1.sendTextMessage(two, null, "This is "
-                +curentUserName+"from "+user_town+" House No:"+user_house_address+"."+
-                " I am Unsafe.My Current Location is " + lat + "  ,  " + lng +" " +address, null, null);
+                + curentUserName + "from " + user_town + " House No:" + user_house_address + "." +
+                " I am Unsafe.My Current Location is " + lat + "  ,  " + lng + " " + address, null, null);
 
         //third number
         SmsManager smsManager2 = SmsManager.getDefault();
         smsManager2.sendTextMessage(three, null, "This is "
-                +curentUserName+"from "+user_town+" House No:"+user_house_address+"."+
-                " I am Unsafe.My Current Location is " + lat + "  ,  " + lng +" " +address, null, null);
+                + curentUserName + "from " + user_town + " House No:" + user_house_address + "." +
+                " I am Unsafe.My Current Location is " + lat + "  ,  " + lng + " " + address, null, null);
 
         Toast.makeText(getApplicationContext(), "SMS sent." + one + two + three, Toast.LENGTH_LONG).show();
         Log.i("SMS_sent", "sendSMSMessage: " + "SMS sent." + this.emerg_one + this.emerg_two + this.emerg_three);
@@ -647,7 +646,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     public void call(View v) {
 
-        final CharSequence[] options = {"Call Family Members", "Call Police", "Cancel"};
+        final CharSequence[] options = {"Call Family Members", "Call Police", "Call Ambulance", "Call Fire Service", "Cancel"};
         AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
         builder.setTitle("Emergency Call To!");
         builder.setIcon(R.drawable.siren);
@@ -667,6 +666,14 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                         // TODO: Consider calling
                         return;
                     }
+                    startActivity(callIntent);
+                } else if (options[item].equals("Call Ambulance")) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:193"));
+                    startActivity(callIntent);
+                } else if (options[item].equals("Call Fire Service")) {
+                    Intent callIntent = new Intent(Intent.ACTION_CALL);
+                    callIntent.setData(Uri.parse("tel:192"));
                     startActivity(callIntent);
                 } else if (options[item].equals("Cancel")) {
                     dialog.dismiss();
@@ -716,6 +723,10 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void tips(View v) {
         startActivity(new Intent(getApplicationContext(), TipsActivity.class));
     }
+    public void tip() {
+        startActivity(new Intent(getApplicationContext(), TipsActivity.class));
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -731,8 +742,9 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.about_us:
-                startActivity(new Intent(getApplicationContext(), AboutUsActivity.class));
+            case R.id.menu_tips:
+//                startActivity(new Intent(getApplicationContext(), AboutUsActivity.class));
+                tip();
                 finish();
                 return (true);
             case R.id.logout:
@@ -902,7 +914,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
 
-
     private void requestLocation() {
         Criteria criteria = new Criteria();
         criteria.setAccuracy(Criteria.ACCURACY_MEDIUM);
@@ -922,7 +933,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         Location location = locationManager.getLastKnownLocation(provider);
         Log.d("mylog1", "In Requesting Location");
         if (location != null && (System.currentTimeMillis() - location.getTime()) <= 1000 * 2) {
-              myCoordinates = new LatLng(location.getLatitude(), location.getLongitude());
+            myCoordinates = new LatLng(location.getLatitude(), location.getLongitude());
             String cityName = getCityName(myCoordinates);
 
             Toast.makeText(this, address, Toast.LENGTH_SHORT).show();
