@@ -70,6 +70,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 import java.util.TimeZone;
 
 import dmax.dialog.SpotsDialog;
@@ -126,7 +127,9 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
 
-        mapFragment.getMapAsync(this);
+        if (mapFragment != null) {
+            mapFragment.getMapAsync(this);
+        }
 
         //init Firebase
         mAuth = FirebaseAuth.getInstance();
@@ -142,11 +145,12 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         btn_video_record = findViewById(R.id.btn_video_record);
         btn_sendMessage = findViewById(R.id.btn_sendMessage);
 
+
         //set Shake function here
         shakeOptions = new ShakeOptions()
                 .background(true)
                 .interval(1000)
-                .shakeCount(5)
+                .shakeCount(4)
                 .sensibility(2.0f);
 
         this.shakeDetector = new ShakeDetector(shakeOptions).start(this, new ShakeCallback() {
@@ -226,9 +230,11 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                     marker = mMap.addMarker(new MarkerOptions().position(myCoordinates));
                 } else
                     marker.setPosition(myCoordinates);
+
             }
         };
 
+        checkForSmsPermission();
 
         if (Build.VERSION.SDK_INT >= 23) {
             if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -239,7 +245,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         } else
             requestLocation();
 
-        checkForSmsPermission();
 
         usersDb.addValueEventListener(new ValueEventListener() {
             @Override
@@ -336,7 +341,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
 
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000, 1, new LocationListener() {
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000, 1, new LocationListener() { //crashes here
             @Override
             public void onLocationChanged(Location location) {
                 double lati = location.getLatitude();
@@ -403,10 +408,13 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 } else
                     for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                        emerg_one = user.getEmerg_contact_one();
-                        emerg_two = user.getEmerg_contact_two();
-                        emerg_three = user.getEmerg_contact_three();
-                        curentUserName = user.getFulName();
+                        if (user != null) {
+                            emerg_one = user.getEmerg_contact_one();
+                            emerg_two = user.getEmerg_contact_two();
+                            emerg_three = user.getEmerg_contact_three();
+                            curentUserName = user.getFulName();
+                        }
+
 
                         edt_gender.setText(user.getGender());
                         edt_address.setText(user.getAddress());
@@ -506,7 +514,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
         intentemail.setType("text/plain");
 
         intentemail.putExtra(Intent.EXTRA_EMAIL, new String[]{FirstMail, SecondMail, ThirdMail, FourthMail, FifthMail});
-        //    intentemail.putExtra(Intent.EXTRA_EMAIL,""+FirstMail+""+SecondMail+""+ThirdMail+""+FourthMail+""+FifthMail);
+        //    intent email.putExtra(Intent.EXTRA_EMAIL,""+FirstMail+""+SecondMail+""+ThirdMail+""+FourthMail+""+FifthMail);
         intentemail.putExtra(Intent.EXTRA_SUBJECT, "Please help me ");
         intentemail.putExtra(Intent.EXTRA_TEXT, "This is "
                 + curentUserName + "from " + user_town + " House No:" + user_house_address + "." +
@@ -552,7 +560,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage(one, null, "This is "
+        smsManager.sendTextMessage(one, null, "This is " //   Caused by: java.lang.IllegalArgumentException: Invalid destinationAddress
                 + curentUserName + "from " + user_town + " House No:" + user_house_address + "." +
                 " I am Unsafe.My Current Location is " + lat + "  ,  " + lng + " " + address, null, null);
 
@@ -723,6 +731,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void tips(View v) {
         startActivity(new Intent(getApplicationContext(), TipsActivity.class));
     }
+
     public void tip() {
         startActivity(new Intent(getApplicationContext(), TipsActivity.class));
     }
@@ -755,7 +764,7 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
                 showSettingsNotificationDialog();
                 return true;
             case R.id.change:
-                showUpdateDialog(mAuth.getCurrentUser().getPhoneNumber());
+                showUpdateDialog(Objects.requireNonNull(mAuth.getCurrentUser()).getPhoneNumber());
                 return true;
 
 
@@ -866,40 +875,43 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        switch (requestCode) {
-            case (REQUEST_CODE):
-                if (resultCode == Activity.RESULT_OK) {
+        if (requestCode == REQUEST_CODE) {
+            if (resultCode == Activity.RESULT_OK) {
 
-                    Uri contactData = data.getData();
-                    Cursor c = managedQuery(contactData, null, null, null, null);
-                    if (c.moveToFirst()) {
+                Uri contactData = null;
+                if (data != null) {
+                    contactData = data.getData();
+                }
+                Cursor c = managedQuery(contactData, null, null, null, null);
+                if (c.moveToFirst()) {
 
 
-                        String id = c.getString(c.getColumnIndexOrThrow(ContactsContract.Contacts._ID));
+                    String id = c.getString(c.getColumnIndexOrThrow(ContactsContract.Contacts._ID));
 
-                        String hasPhone = c.getString(c.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER));
+                    String hasPhone = c.getString(c.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER));
 
-                        if (hasPhone.equalsIgnoreCase("1")) {
-                            Cursor phones = getContentResolver().query(
-                                    ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
-                                    ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id,
-                                    null, null);
+                    if (hasPhone.equalsIgnoreCase("1")) {
+                        Cursor phones = getContentResolver().query(
+                                ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
+                                ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + id,
+                                null, null);
+                        if (phones != null) {
                             phones.moveToFirst();
-                            String numberPicked = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
-                            number = phones.getString(phones.getColumnIndex("data1"));
-                            System.out.println("number is:" + number);
-
-                            Toast.makeText(this, "calling " + numberPicked, Toast.LENGTH_LONG).show();
-                            Intent callIntent = new Intent(Intent.ACTION_CALL);
-                            callIntent.setData(Uri.parse("tel:" + number));
-                            startActivity(callIntent);
-
                         }
+                        String numberPicked = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+                        number = phones.getString(phones.getColumnIndex("data1"));
+                        System.out.println("number is:" + number);
 
+                        Toast.makeText(this, "calling " + numberPicked, Toast.LENGTH_LONG).show();
+                        Intent callIntent = new Intent(Intent.ACTION_CALL);
+                        callIntent.setData(Uri.parse("tel:" + number));
+                        startActivity(callIntent);
 
                     }
+
+
                 }
-                break;
+            }
         }
 
 
@@ -965,5 +977,6 @@ public class HomeActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
     }
 }

@@ -34,16 +34,17 @@
             android:label="User Details"></activity>
         <activity
             android:name=".PhoneAuth"
+            android:theme="@style/SplashTheme"
             android:label="Verification"></activity>
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".MainActivity" />
         <activity android:name=".RegisterActivity" />
         <activity

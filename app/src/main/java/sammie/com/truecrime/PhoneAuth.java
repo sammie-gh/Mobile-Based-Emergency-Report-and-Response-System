@@ -1,11 +1,14 @@
 package sammie.com.truecrime;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -67,7 +70,14 @@ public class PhoneAuth extends AppCompatActivity {
         getWindow().setBackgroundDrawableResource(R.color.darkBlue);
 
 
-        mAuth = FirebaseAuth.getInstance();
+        if (Build.VERSION.SDK_INT >= 23) {
+            if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                Log.d("mylog", "Not granted");
+                requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+            }
+        }
+
+            mAuth = FirebaseAuth.getInstance();
 
         if (mAuth.getCurrentUser() != null) {
             Intent intent = new Intent(PhoneAuth.this, HomeActivity.class);

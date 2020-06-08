@@ -6,12 +6,10 @@
     android:background="@drawable/backgroung"
     android:orientation="vertical">
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:orientation="horizontal">
 
         <TextView
@@ -19,23 +17,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Latti:"
-            android:textSize="17sp"
-            android:textColor="#fff" />
+            android:textColor="#fff"
+            android:textSize="17sp" />
 
         <TextView
             android:id="@+id/txt_longi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:textSize="17sp"
+            android:layout_marginStart="20dp"
             android:text="Longi:"
-            android:textColor="#fff" />
+            android:textColor="#fff"
+            android:textSize="17sp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:orientation="horizontal">
 
 
@@ -43,7 +42,7 @@
             android:id="@+id/location_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:text="name:"
             android:textColor="#fff"
             android:textSize="17sp" />
@@ -55,70 +54,64 @@
         android:layout_height="wrap_content">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="15dp"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
 
 
+            <ImageButton
+                android:id="@+id/btn_video_record"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="05dp"
+                android:background="@drawable/ic_iconfinder_record_player"
+                android:onClick="videorecording" />
+
+            <ImageButton
+                android:id="@+id/btn_sendMessage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_iconfinder_smartphone_message" />
+
+            <ImageButton
+                android:id="@+id/btn_send_mail"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_iconfinder_mail" />
+
+            <ImageButton
+                android:id="@+id/btn_call"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_iconfinder_call"
+                android:onClick="call" />
+
+            <ImageButton
+                android:id="@+id/btn_direction"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_iconfinder_map"
+                android:onClick="direction" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_technology_off"
+                android:text="ToggleButton" />
 
 
-        <ImageButton
-        android:id="@+id/btn_video_record"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="05dp"
-            android:background="@drawable/ic_iconfinder_record_player"
-            android:onClick="videorecording" />
-
-        <ImageButton
-            android:id="@+id/btn_sendMessage"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_iconfinder_smartphone_message"
-       />
-
-        <ImageButton
-            android:id="@+id/btn_send_mail"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_iconfinder_mail"
-             />
-
-        <ImageButton
-            android:id="@+id/btn_call"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_iconfinder_call"
-            android:onClick="call" />
-
-        <ImageButton
-            android:id="@+id/btn_direction"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/ic_iconfinder_map"
-            android:onClick="direction" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:background="@drawable/ic_technology_off"
-            android:text="ToggleButton" />
-
-
-
-    </LinearLayout>
+        </LinearLayout>
 
     </HorizontalScrollView>
 
@@ -129,13 +122,13 @@
         android:layout_height="600dp" />
 
     <Button
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/button_bg_transparent"
         android:onClick="tips"
         android:text="Safty Tips"
-        style="?android:attr/borderlessButtonStyle"
         android:textColor="#fff" />
     <!--   for make button transparent
          android:background="@android:color/transparent"
